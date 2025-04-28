@@ -15,6 +15,7 @@
 | --confuse | Confuse mode sends absurd data input in order to confuse agent | NO |
 | --delay <number> | Specify delay in seconds between sent messages | NO | 
 | --repeat <number> | Repeat same payload multiple times | NO |  
+| --dynamic-uagent | Changes user web agent every fuzz attemp | NO | 
 
 <b>Important note:</b> Do not perform AI agents penetration testing without proper permissions. Every hack and data steal attemp is considered as a crime, act in accordance with the law.
 
