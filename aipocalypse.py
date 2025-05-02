@@ -148,13 +148,13 @@ GitHub: https://github.com/csshark/AIpocalypse
 
 def _send_payload(self, payload: Dict[str, Any]) -> Dict[str, Any]:
     try:
-        # Wykryj API
+        
         api_type = detect_api(self.target_url)
         
-        # Zbuduj payload
+        
         modified_payload = build_payload(api_type, payload)
         
-        # Dodaj nagłówki
+        
         headers = {"Content-Type": "application/json"}
         if self.api_key:
             headers["Authorization"] = f"Bearer {self.api_key}"
@@ -164,7 +164,7 @@ def _send_payload(self, payload: Dict[str, Any]) -> Dict[str, Any]:
             if self.verbose:
                 logging.info(f"Using User-Agent: {user_agent}")
         
-        # Wyślij żądanie
+        
         response = requests.post(self.target_url, json=modified_payload, headers=headers, timeout=10)
         response.raise_for_status()
         return response.json()
