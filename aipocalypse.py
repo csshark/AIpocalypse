@@ -39,7 +39,7 @@ def build_payload(api_type: str, params: Dict[str, Any]) -> Dict[str, Any]:
         if param in params:
             payload[param] = params[param]
         else:
-            raise ValueError(f"Brak wymaganego parametru: {param}")
+            raise ValueError(f"Missing required param: {param}")
     
     return payload
 
