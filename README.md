@@ -10,16 +10,18 @@
 
 | Flag | Functionality | Required |
 | :---- | :------------- | :--------: |
-| -h | Display usage examples | NO | 
-| --target | Specify url of target agent | <b>YES</b> | 
-| --api-key | Specify your API key for authentication | <b>YES</b> | 
-| --verbose | Show output in real time | NO |
-| --output <filename.txt> | Write output to file | <b>YES</b> | 
-| --params-file| <em>(Optional)</em> Specify custom payloads file (.json) | NO | 
-| --confuse | Confuse mode sends absurd data input in order to confuse agent | NO |
-| --delay <number> | Specify delay in seconds between sent messages | NO | 
-| --repeat <number> | Repeat same payload multiple times | NO |  
-| --dynamic-uagent | Changes user web agent every fuzz attemp | NO | 
+| -h, --help | Show help message and exit | NO |
+| --target | Specify the target URL to test | YES |
+| --api-key | Specify the API key for authentication | YES |
+| --payloads | Path to custom payloads file (default: payloads.json) | NO |
+| --params | Path to parameters file (default: params.json) | NO |
+| --verbose | Show verbose output (e.g., error logs) | NO |
+| --confuse | Enable confusion mode by adding noise to payloads | NO |
+| --repeat <n> | Number of times to send each payload (default: 1) | NO |
+| --delay <n> | Delay in seconds between each payload sent | NO |
+| --rotate-user-agent | Randomize User-Agent header for each request | NO |
+
+<p>Example usage: <code>python3 aipocalypse.py --target https://example.com --api-key YOUR_API_KEY</code></p>
 
 <b>Important note:</b> Do not perform AI agents penetration testing without proper permissions. Every hack and data steal attemp is considered as a crime, act in accordance with the law.
 
