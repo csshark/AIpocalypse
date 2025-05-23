@@ -11,17 +11,24 @@
 | Flag | Functionality | Required |
 | :---- | :------------- | :--------: |
 | -h, --help | Show help message and exit | NO |
-| --target | Specify the target URL to test | YES |
+| target | Specify the target URL to test (must start with http:// or https://) | YES |
 | --api-key | Specify the API key for authentication | YES |
 | --payloads | Path to custom payloads file (default: payloads.json) | NO |
 | --params | Path to parameters file (default: params.json) | NO |
 | --verbose | Show verbose output (e.g., error logs) | NO |
 | --confuse | Enable confusion mode by adding noise to payloads | NO |
-| --repeat <n> | Number of times to send each payload (default: 1) | NO |
-| --delay <n> | Delay in seconds between each payload sent | NO |
+| --repeat <n> | Number of times to send each payload (default: 1, must be ≥ 1) | NO |
+| --delay <n> | Delay in seconds between each payload sent (must be ≥ 0) | NO |
 | --rotate-user-agent | Randomize User-Agent header for each request | NO |
 
 <p>Example usage: <code>python3 aipocalypse.py --target https://example.com --api-key YOUR_API_KEY</code></p>
+
+<h4>params.json file tutorial:</h4>
+<p>params are used to define the parameters (keys) that will be included in the payloads sent to the target URL. These parameters act as placeholders for the actual data being sent.
+Example params.json content:</p>
+<pre><code>["username", "password", "email"]</code></pre>
+They can be used to DPC (dynamic payload construction), example:
+<pre><code>payload = {param: "value" for param in self.params}</code></pre>
 
 <b>Important note:</b> Do not perform AI agents penetration testing without proper permissions. Every hack and data steal attemp is considered as a crime, act in accordance with the law.
 
