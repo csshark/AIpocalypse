@@ -21,7 +21,7 @@
 | --delay <n> | Delay in seconds between each payload sent (must be ≥ 0) | NO |
 | --rotate-user-agent | Randomize User-Agent header for each request | NO |
 
-<p>Example usage: <code>python3 aipocalypse.py --target https://example.com --api-key YOUR_API_KEY</code></p>
+<p>Example usage: <code>python3 aipocalypse.py --target https://example.com --api-key xyZ-s1mPl3k37zR4</code></p>
 
 <h4>params.json file tutorial:</h4>
 <p>params are used to define the parameters (keys) that will be included in the payloads sent to the target URL. These parameters act as placeholders for the actual data being sent.
