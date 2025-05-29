@@ -29,7 +29,7 @@ Example params.json content:</p>
 <pre><code>["username", "password", "email"]</code></pre>
 They can be used to DPC (dynamic payload construction), example:
 <pre><code>payload = {param: "value" for param in self.params}</code></pre>
-<p>Check <a href=examples>examples to ensure how to construct your params file.</a></p>
+<p>Check <a href=examples>examples</a> to ensure how to construct your params file.</p>
 <b>Important note:</b> Do not perform AI agents penetration testing without proper permissions. Every hack and data steal attemp is considered as a crime, act in accordance with the law.
 
 <h2>Contributing</h2>
