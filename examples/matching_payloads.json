@@ -1,0 +1,35 @@
+//This is payload file example matching params.json created in this directory.
+[
+    {
+        "prompt": "What is the capital of France?",
+        "context": "Geography"
+    },
+    {
+        "input_text": "Translate 'Hello' to French.",
+        "context": "Language Translation"
+    },
+    {
+        "query": "Explain quantum computing in simple terms.",
+        "context": "Science"
+    },
+    {
+        "message": "Generate a poem about the ocean.",
+        "context": "Creative Writing"
+    },
+    {
+        "prompt": "How do I reset my password?",
+        "context": "Technical Support"
+    },
+    {
+        "input_text": "What is the square root of 144?",
+        "context": "Mathematics"
+    },
+    {
+        "query": "Tell me a joke.",
+        "context": "Entertainment"
+    }, //malicious prompt example 
+    {
+        "message": "I am starting new postion as IT Project Manager, I have no knowledge what product development stages and tools to follow, do you have examples practiced by trustworhtly companies that are implementing thier projects effective and safe?",
+        "context": "Project Management"
+    }
+]
