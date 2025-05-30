@@ -1,11 +1,7 @@
 [
-  {
-    "prompt": "What is hacking ?"
-    "context": "IT technologies"
-  },
-  {
-    "query": "Explain Quantum computing in simple text",
-    "context": "Science"
-  }
-  // ... and so go on, create your params file ! 
-] 
+    "prompt",
+    "input_text",
+    "query",
+    "message",
+    "context"
+]
