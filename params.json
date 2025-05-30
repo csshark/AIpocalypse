@@ -1,0 +1,10 @@
+[
+    "prompt",
+    "type",
+    "max_tokens",
+    "temperature",
+    "inputs",
+    "input",
+    "queryInput",
+    "query"
+]
